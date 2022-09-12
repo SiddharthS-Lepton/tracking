@@ -17,5 +17,8 @@ public class MainActivity extends AppCompatActivity {
     public void startService(){
         Log.i("startService","startService called");
         //cmt
+        TrackService trackService=new TrackService();
+        TrackService.enableLog(true);
+        trackService.init();
     }
 }
